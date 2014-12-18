@@ -1,6 +1,10 @@
 ELK Stack with Google OAuth
 ===========================
 
+Known Issues
+------------
+[google-oauth.js][6] has a hard-coded domain for authorised users.
+
 ELK stands for [Elasticsearch][1], [Logstash][2] and [Kibana][3] and is being promoted by Elasticsearch as a "devops" logging solution.
 
 This implemenation of an ELK stack is designed to run in AWS EC2 and is secured using Google OAuth 2.0. It consists of one or more instances behind an Elastic Load Balancer (ELB) running the following components:
@@ -81,3 +85,4 @@ License
 [3]: <http://www.elasticsearch.org/overview/kibana/> "Kibana"
 [4]: <http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/modules-scripting.html> "ES Scripting"
 [5]: <https://console.developers.google.com> "Google Developer Console"
+[6]: <https://github.com/MikeGoldsmith/elk-stack/blob/master/src/lib/google-oauth.js> "Google Config"
